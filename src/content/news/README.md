@@ -19,7 +19,7 @@ News items are referenced in 3 places of the website:
 
 The following metadata must be provided:
 
-- `date`: The date of the news article in the format of MM/DD/YYYY
+- `date`: The date of the news article in the format of DD/MM/YYYY
 - `title`: The title of the article
 
 ## Example
