@@ -1,0 +1,78 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          DataPLANT will engage further with InvenioRDM for Data Publication
+        </h1>
+        <h2 class="subtitle is-2">
+          16 May 2021
+        </h2>
+        <div class="content">
+          <p>DataPLANT envisions a much stronger role of data publications in the future. To provide the possibility of data publication, DataPLANT prepares to use InvenioRDM, a modern state-of-the-art framework. <a href="https://inveniosoftware.org/">InvenioRDM</a> is funded primarily through CERN’s using both structural funding as well as grant money. Invenio is a partners driven endeavor to answer data publication needs, and collaborating on InvenioRDM helps with a cheaper and better product. Collaboration-wise InvenioRDM works as an open collaboration without formal project agreements between partners. Instead, it relies on a governance and code of conduct as the basis for the collaboration. Legally, it requires that the source code is open source licensed and that contributors retain their copyright. Invenio is open to onboard new partners. DataPLANT plans to become a partner through Freiburg university and will commit resources to Invenio in form of two person-months focusing on testing, documentation, publication metadata, and outreach into the plant community. That <a href="https://datacite.org/">DataCite</a> metadata schema is the core basis for the metadata model. Additionally, extensions for scientific metadata are possible.</p>
+<p><img src="../../images/News-Items/Invenio.svg" width="60%" alt="Invenio" title="Invenio" /></p>
+<p>In the momentarily state of development Invenio includes a comfortable user interface and the OAI-PMH interface for indexing and exchange of metadata with other systems. Invenio includes already necessary interfaces to <a href="https://orcid.org/">ORCID</a> authentication and DOI/DataCite. It will utilize the bwSFS Storage for Science service as the storage backend. The system is distributed over four geographically distributed locations of the in DataPLANT participating computer centers in Tübingen and Freiburg. For the storage of the actual datasets (the envisioned annotated research context), InvenioRDM natively supports the S3 protocol and thus allows the connection to the object storage infrastructure of bwSFS. In its implementation, Invenio takes advantage of S3 and acts as a broker. The system hands out pre-signed URLs during data transfers to allow a direct connection between clients and object storage. This directly leverages the high availability and performance of the underlying bwSFS infrastructure.</p>
+<p>The extensive REST API of InvenioRDM offers additional possibilities for integration with third-party systems like e.g. ORCID for further workflows which are in discussion at the moment. Initial workflows have been already been evaluated, such as the automatic creation of publication drafts from different systems. These include code versioning platforms such as <a href="https://about.gitlab.com/de-de/">GitLab</a> or <a href="https://github.com/about">GitHub</a> for new code releases, other compute environments such as HPC or Galaxy after completion of jobs, or the envisioned science gateway in the form of the DataPLANT Hub. For the allocation of digital object identifiers (DOI) in Invenio, established services of the participating university libraries will be leveraged.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

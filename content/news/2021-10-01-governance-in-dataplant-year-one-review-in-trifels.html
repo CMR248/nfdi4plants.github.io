@@ -1,0 +1,83 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          Governance in DataPLANT - Year one review in Trifels
+        </h1>
+        <h2 class="subtitle is-2">
+          1 Oct 2021
+        </h2>
+        <div class="content">
+          <p>Fortunately the pandemic situation allowed for a three day in-person meeting for a review of DataPLANT after year one. As other consortia we were not able to completely staff all posts by then and needed to review the work plan to adapt to ongoing developments and insights gathered over the first year. Thus we reviewed of basic infrastructure considerations and adhered to the feedback from the Senior Management Board meeting to emphasize the priority of community services. In terms of the project's mid-term review we decided to focus on the specific assets and highlights of the project. First working tools and services evolved around metadata annotation and DataPLANT ontology development through Swate and Swobup. The tools around SWATE/Swobup need a stable infrastructure when promotion of the services to the community picks up speed. The ARC specification is under way and GitLab is getting thoroughly tested. Insights regarding typical workflows in the community were gathered and applied to storage and processing of data (to offer both local, on-premise and cloud storage).</p>
+<p><img src="../../images/News-Items/Possible-DataPLANT-Infrastructure.png" width="50%" alt="Possible DataPLANT infrastucture" title="Possible DataPLANT infrastucture" /></p>
+<p>Further considerations regarding further development focused the to be maintained compatibility with the NFDI regarding AAI and common platforms (and basic services). This means that DataPLANT does not necessarly sets up own large infrastructures in a monolithic form, but prefers microservices and an agile approach. The services should be as easy to maintain as possible as well as being potentially interchangeable. Regarding the software base DataPLANT will rely on broadly deployed, established base software used by many other scientific communities like GitLab or Invenio. It takes the considerations on the sometimes tight staffing situation as well as the qualifications of the existing personnel into account. In general we aim to avoidance too complex structures that are difficult to integrate later on and ensure reliable operation.</p>
+<p>A major task is the finalization of the ARC specification including its relation to Research Object Crates (RO-Crate) and FAIR digital objects (FDO). The final review uses the GitHub pull-request mechanism and the resulting first version will be presented to the relevant boards, at the same time dissemination to the key participants.</p>
+<p>Regarding decision-making processes it was clarified that the task areas
+1 and 2 primarily focus on the &quot;how&quot; and to concentrate in the regular meetings on respective task area cores. The task area 3 aims on the facilitation between &quot;what do you want&quot; (community wishes and input) to the &quot;how&quot;?</p>
+<p>GitLab is getting focused on for versioning and sharing as it is an established tool where much expertise already exists and as a way to complement existing project repositories and services at GitHub. It well get established as a central tool with many functions of an intended science gateway plus further services, like static website, data backend for Swate. It will partially offer the functionality of a science gateway for DataPLANT from which a range of services will be accessible.
+The future infrastructure will rely on a fixed (regarding service host names), stable entry point but allowing the inclusion or alternative of local resources. The envisioned model can incorporate different clouds or similar resources and dynamically handle states of unavailability.
+The persistence is achieved through professional backend storage systems.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

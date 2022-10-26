@@ -1,0 +1,76 @@
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
+    <title>
+      nfdi4plants - News
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
+    <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
+  </head>
+  <nfdi-navbar></nfdi-navbar>
+  <body>
+    <section class="hero is-medium is-dark has-bg-lightblue">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            DataPLANT News
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container p-4">
+        <h1 class="title is-1">
+          State of the backend storage infrastructure is evolving
+        </h1>
+        <h2 class="subtitle is-2">
+          16 Nov 2020
+        </h2>
+        <div class="content">
+          <p>The storage system bwSFS (Storage-for-Science) forms the geo-redundant distributed technical backbone for basic storage services, research data management and sharing of data. It contributes to the storage infrastructure for the DataPLANT community beside the de.NBI infrastructure services. The central storage components of bwSFS are located at the Tübingen and Freiburg computer centers. In order to reasonably manage the intended broad user base of the system - besides DataPLANT, the local communities of the participating universities and the Science Data Center BioDATEN are served as well - and to achieve a seamless integration into the envisioned DataPLANT services, a federated management of project, user and group data is necessary. Already in the implementation phase of the software and services, which involves the subject sciences, it becomes apparent that the existing methods for identity management are not sufficient. Compared to HPC services, storage services require a much deeper integration of existing infrastructures and a more flexible user management, which should also include ORCID, for example.</p>
+<p>To support research data management, the use of InvenioRDM, which already includes a convenient user interface and the OAI-PMH interface, is chosen within bwSFS. All central institutions and projects involved in the RDM process were included in this decision at an early stage. In Freiburg, a Gitlab for versioning, collaboration and sharing of data of ongoing projects will be used in the context of TA 4. Established services of the university libraries will be used for DOI allocation in Invenio, and ORCID will be used for persistent identification of researchers. In this way, resources for RDM will be pooled in order to improve support for the disciplines in the implementation of specific RDM requirements and to ensure better advice for researchers. To enforce the FAIR and OpenAccess principles, DMPs will be used to support standardization in TA 1 with guidelines for metadata management, archiving and licensing models.</p>
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <nfdi-footer></nfdi-footer>
+</html>

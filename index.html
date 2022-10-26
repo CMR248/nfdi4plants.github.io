@@ -1,69 +1,52 @@
-<html class="has-navbar-fixed-top">
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
   <head>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <title>
-      nfdi4plants static site template
+      nfdi4plants - Home
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
     <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
-    <script src="/js/navbar.js"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
   </head>
+  <nfdi-navbar></nfdi-navbar>
   <body>
-    <nav class="navbar is-fixed-top has-bg-darkblue">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="/images/logo.svg" alt="Logo" width="32" height="32"/>
-        </a>
-        <a class="navbar-burger" data-target="navMenu" aria-label="menu" role="button" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="navMenu" class="navbar-menu has-bg-darkblue">
-        <div class="navbar-start is-justify-content-center is-flex-grow-1">
-          <a class="navbar-item is-active smooth-hover" href="/">
-            Home
-          </a>
-          <a class="navbar-item" href="/news.html">
-            News
-          </a>
-          <a class="navbar-item" href="/">
-            DataHub
-          </a>
-          <a class="navbar-item" href="/">
-            Resources
-          </a>
-          <a class="navbar-item" href="/">
-            About
-          </a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item" href="https://twitter.com/nfdi4plants">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://github.com/nfdi4plants">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://github.com/nfdi4plants">
-            <span class="icon">
-              <i class="fas fa-paper-plane"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
-            Z
-          </a>
-        </div>
-      </div>
-    </nav>
     <section class="hero is-medium">
       <div class="hero-body">
         <div class="container has-text-centered">
@@ -76,7 +59,7 @@
           <p class="title">
             Made easy.
           </p>
-          <a class="button is-rounded has-bg-lightblue">
+          <a class="button is-rounded has-bg-lightblue" href="https://register.nfdi4plants.org">
             <span class="icon-text">
               <span>
                 Become a member
@@ -138,7 +121,7 @@
                 Fundamental research in plant science
               </h1>
               <div class="content">
-                <p>DataPlant is primarily geared towards the needs of fundamental plant research (e.g. those represented by the DFG categories 202-[01 evolution and systematics of plants and animals, 04 plant physiology, 05 plant biochemistry and biophysics, 06 plant cell and developmental biology, 07 plant genetics]. As such DataPlant is especially adapter to large scale data sets be it omics science or imaging and is ready to store petabaytes of annotated data.</p>
+                <p>DataPLANT is primarily geared towards the needs of fundamental plant research (e.g. those represented by the DFG categories 202-[01 evolution and systematics of plants and animals, 04 plant physiology, 05 plant biochemistry and biophysics, 06 plant cell and developmental biology, 07 plant genetics]. As such DataPLANT is especially adapter to large scale data sets be it omics science or imaging and is ready to store petabaytes of annotated data.</p>
 
               </div>
               <a class="button is-rounded has-bg-darkblue" href="content/learn-more/the-community.html">
@@ -161,7 +144,7 @@
                 Understanding ARC publications
               </h1>
               <div class="content">
-                <p>DataPlant will allow users to store their data in form of an annotated research context. This includes not only the measurement data, but also (meta)data annotations, tools, and scripts. This will allow reproducibility plus to forward “raw data” and metadata slices to public repositories (e.g. EBI NCBI etc.).</p>
+                <p>DataPLANT will allow users to store their data in form of an annotated research context. This includes not only the measurement data, but also (meta)data annotations, tools, and scripts. This will allow reproducibility plus to forward “raw data” and metadata slices to public repositories (e.g. EBI NCBI etc.).</p>
 
               </div>
               <a class="button is-rounded has-bg-lightblue" href="content/learn-more/annotated-research-context.html">
@@ -201,7 +184,7 @@
                 <p>DataPLANT’s mission is service standing on the shoulders of giants. As such it relies on existing IT infrastructure and builds user-oriented services. DataPLANT wants to break the paradigm of “we are a --- mandated provider so you have to live with our tools where even IT experts get gray hair when submitting data” to “we understand that annotating data and providing metadata takes precious and we are in it together so let’s make this as easy as possible”.</p>
 
               </div>
-              <a class="button is-rounded has-bg-olive" href="content/learn-more/service.html">
+              <a class="button is-rounded has-bg-olive" href="content/service.html">
                 Learn more
               </a>
             </div>
@@ -219,16 +202,16 @@
             <div class="columns">
               <div class="column is-2">
                 <h4 class="subtitle is-4">
-                  1 Jun
+                  15 Aug
                 </h4>
               </div>
               <div class="column is-10">
                 <h4 class="title is-4">
-                  latest newsitem
+                  DataPLANT published Knowledge Base
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ...
+                DataPLANT has developed a Knowledge Base for research data management (RDM) in fundamental plant research. The Knowledge Base is divided into three sections, which build upon each other. Within the Fundamentals section, researchers are provided with knowledge about principles of RDM, such as the FAIR Data Principles or “What is metadata?”. As the header already indicates, the second section is on how DataPLANT is implementing these aspects to support plant researchers with sophisticated and straight-forward structures, tools and services for their RDM. At the moment...
                 <div class="control mt-4">
-                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/first.html">
+                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/2022-08-15-dataplant-published-knowledge-base.html">
                     Read more
                   </a>
                 </div>
@@ -239,16 +222,16 @@
             <div class="columns">
               <div class="column is-2">
                 <h4 class="subtitle is-4">
-                  1 May
+                  8 Jul
                 </h4>
               </div>
               <div class="column is-10">
                 <h4 class="title is-4">
-                  second
+                  MAdLand and DataPLANT signed a Memorandum of Understanding
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ...
+                On 8th July the MadLand project represented by Prof. Dr. Stefan A. Rensing and DataPLANT represented by its speaker signed a Memorandum of Understanding on joint collaboration in research data management in fundamental plant research. Both parties share the same goals to reach FAIRification of research data as in modern plant research, scientists increasingly rely on research data management (RDM) for the effective acquisition, processing, archival, and sharing of research data sets...
                 <div class="control mt-4">
-                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/second.html">
+                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/2022-07-08-madland-and-dataplant-signed-a-memorandum-of-understanding.html">
                     Read more
                   </a>
                 </div>
@@ -261,16 +244,16 @@
             <div class="columns">
               <div class="column is-2">
                 <h4 class="subtitle is-4">
-                  1 Apr
+                  23 Jun
                 </h4>
               </div>
               <div class="column is-10">
                 <h4 class="title is-4">
-                  third
+                  DataPLANT participated in the JCDL Satellite Event
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ...
+                DataPLANT participated in the JCDL Satellite Event on 23rd June 2022. It presented it's background and activities on research data management in the workshop "RDM and DP communities: Finding the common ground to develop a collaborative future service landscape". Long-term access to research data is one of the major goals of the NFDI. Our consortium is strongly committed to research data management and the necessary technical and organizational frameworks. Before the start of DataPLANT the participants...
                 <div class="control mt-4">
-                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/third.html">
+                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/2022-06-23-dataplant-participated-in-the-jcdl-satellite-event.html">
                     Read more
                   </a>
                 </div>
@@ -281,16 +264,16 @@
             <div class="columns">
               <div class="column is-2">
                 <h4 class="subtitle is-4">
-                  1 Mar
+                  19 May
                 </h4>
               </div>
               <div class="column is-10">
                 <h4 class="title is-4">
-                  last
+                  DataPLANT infrastructure and services at upcoming NFDI Tool Talk
                 </h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ...
+                The infrastructure development team of DataPLANT will present “The current state of developments in the DataPLANT infrastructure and services” at the upcoming NFDI tool talks. The tool talks are open to the wider NFDI community and foster the exchange between the practitioners and developers in research data management tools and services. It allows us to verify our concepts and receive feedback on the principles and ideas before advancing them to the next level. The presentation follows up...
                 <div class="control mt-4">
-                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/fourth.html">
+                  <a class="button is-small has-bg-darkblue-lighter-20" href="/content/news/2022-05-19-dataplant-infrastructure-and-services-at-upcoming-nfdi-tool-talks.html">
                     Read more
                   </a>
                 </div>
@@ -301,123 +284,5 @@
       </div>
     </section>
   </body>
-  <footer class="footer has-bg-darkblue-lighter-20">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              DataPLANT - Democratization of plant research made easy.
-            </h3>
-          </div>
-          <div class="block">
-            <p>
-              DataPLANT is part of 
-              <a href="https://www.nfdi.de/">
-                NFDI
-              </a>
-            </p>
-          </div>
-          <div class="block">
-            <p>
-              This website is developed and maintained by 
-              <a>
-                members of DataPLANT 
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Navigation
-            </h3>
-          </div>
-          <ul>
-            <div class="block">
-              <li>
-                <a href="/">
-                  Home
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  News
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  DataHub
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  Resources
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  About
-                </a>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Social
-            </h3>
-          </div>
-          <div class="block">
-            <a href="https://twitter.com/nfdi4plants">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-twitter"></i>
-                </span>
-                <span>
-                  DataPLANT on Twitter
-                </span>
-              </span>
-            </a>
-          </div>
-          <div class="block">
-            <a href="https://github.com/nfdi4plants">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>
-                  DataPLANT open source projects on GitHub
-                </span>
-              </span>
-            </a>
-          </div>
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Legal
-            </h3>
-          </div>
-          <div class="block">
-            <a href="">
-              Imprint
-            </a>
-          </div>
-          <div class="block">
-            <a href="">
-              Privacy
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <nfdi-footer></nfdi-footer>
 </html>

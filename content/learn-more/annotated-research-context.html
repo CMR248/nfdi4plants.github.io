@@ -1,229 +1,284 @@
-<html class="has-navbar-fixed-top">
+<html class="has-navbar-fixed-top" style="scroll-behavior: smooth;">
   <head>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"/>
     <title>
-      nfdi4plants static site template
+      nfdi4plants - Home
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="/style/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@creativebulma/bulma-collapsible@1.0.4/dist/css/bulma-collapsible.min.css"/>
     <script defer="true" src="https://kit.fontawesome.com/0d3e0ea7a6.js" crossOrigin="anonymous"></script>
-    <script src="/js/navbar.js"></script>
+    <script type="module" src="/js/bundle.js"></script>
+    <style>
+      
+                    body {
+                        margin: 0px;
+                    }
+
+                    thead tr th, strong {
+                        color: var(--accent-text-color) !important
+                    }
+
+                    a {
+                        color: var(--link-color, #4FB3D9) !important;
+                    }
+
+                    a:hover {
+                        color: var(--link-hover-color, #3A3A3A) !important;
+                    }
+
+                    thead {
+                        font-size: 1.2rem;
+                    }
+
+                    nfdi-toc, nfdi-body {
+                        --outside-background-color: rgb(240, 243, 246);
+                        --header-color: rgb(10, 12, 16)
+                        --element-text-color: #0E1116;
+                        --element-background-color: #fff;
+                        --accent-text-color: rgb(31, 194, 167);
+                        --link-color: #4FB3D9;
+                        --link-hover-color: #8ad3ee;
+                    }
+                
+    </style>
   </head>
+  <nfdi-navbar></nfdi-navbar>
   <body>
-    <nav class="navbar is-fixed-top has-bg-darkblue">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="/images/logo.svg" alt="Logo" width="32" height="32"/>
-        </a>
-        <a class="navbar-burger" data-target="navMenu" aria-label="menu" role="button" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="navMenu" class="navbar-menu has-bg-darkblue">
-        <div class="navbar-start is-justify-content-center is-flex-grow-1">
-          <a class="navbar-item" href="/">
-            Home
-          </a>
-          <a class="navbar-item" href="/news.html">
-            News
-          </a>
-          <a class="navbar-item" href="/">
-            DataHub
-          </a>
-          <a class="navbar-item" href="/">
-            Resources
-          </a>
-          <a class="navbar-item" href="/">
-            About
-          </a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item" href="https://twitter.com/nfdi4plants">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://github.com/nfdi4plants">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://github.com/nfdi4plants">
-            <span class="icon">
-              <i class="fas fa-paper-plane"></i>
-            </span>
-          </a>
-          <a class="navbar-item" href="https://zenodo.org/communities/nfdi4plants?page=1&size=20" style="font-weight: bold;">
-            Z
-          </a>
-        </div>
-      </div>
-    </nav>
     <section class="hero is-medium has-bg-lightblue">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-lightblue is-uppercase has-text-weight-light">
-            annotated research context
+          <h1 class="title is-white is-uppercase has-text-weight-light">
+            Annotated Research Context
           </h1>
           <h1 class="title">
-            Making your research digital
+            ARCs are FAIR digital Objects (FDOs)
           </h1>
           <div class="content">
-            <p>From notes to knowledge by increasing the level of annotation at the source, tracking provenance using community standards. This will maximize data discoverability and reuse following the FAIR data principles.</p>
+            <p>As such, they come along with metadata, code for operations, and a persistent identifier. ARCs are compliant to the FAIR Principles since they are​</p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/FDOs.png"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <h1 class="title is-lightblue">
+            Real-world ARC
+          </h1>
+          <div class="content">
+            <p><span style="color:lightblue-darker-10">An ARC is intended to capture complete (meta)data, including raw and processed data, but also workflow descriptions as well as essential external files. ARCs cover scenarios ranging from single experimental setups to complex experimental designs. The full ARC-specifications are provided <a href="https://github.com/nfdi4plants/ARC-specfication" title="ARC-specification">here</a>.</span></p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/real-world-arc.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-darkblue has-border-color-darkblue">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-white">
+                ARCs are RO-Crate certified
+              </h1>
+              <div class="content">
+                <p>ARCs are a profile implementation of RO-Crates for basic plant research.</p>
+<p>The ARC is packaged with its digital object identifier and its RO Metadata File (ro-crate-metadata.json).</p>
+<p>This RO metadata file is automatically generated using a converter, which is able to read and transport information out of the ARC.</p>
+
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/ROC.svg"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-mint-lighter-70 has-border-color-mint-lighter-70">
+        <div class="container">
+          <h1 class="title is-white">
+            Tools for creating ISA model coherent ARCs
+          </h1>
+          <div class="content">
+            <p>Although ARCs can be generated completely manually, we encourage you to use our convenient tools that assist you in the process.<br />
+text-top-image-bottom
+The <a href="https://github.com/nfdi4plants/arcCommander" title="Arc Commander">ARC Commander</a> offers machine-aided creation and completion of the ARC folder and file structure.</p>
+<p><a href="https://github.com/nfdi4plants/Swate" title="Swate">SWATE</a> and our templates assists you in the process of creating your assay files.</p>
+
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/tools.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <h1 class="title is-darkblue">
+            ARCs offer a single point of entry logic for data management and computation
+          </h1>
+          <div class="content">
+            
+          </div>
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/multiple-exits.svg"/>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/investigationfile.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-mint">
+                ISA investigation file
+              </h1>
+              <div class="content">
+                <p>A mandatory central registry for studies, assays, persons, … saved in a XLSX format, which follows the ISA model specification (v1.0).</p>
+<p>Using the ARC Commander allows you to automatically fill and update the investigation file.</p>
+<p>Every worksheet needs to contain one table object storing the metadata.  Comments or additional information can be stored alongside with table objects in a worksheet.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-mint-lighter-40 has-border-color-mint-lighter-40">
+        <div class="container">
+          <figure class="image is-3by1">
+            <img src="../../images/Learn-more/ARC/assayfile.svg"/>
+          </figure>
+          <h1 class="title is-white">
+            Isa assay file
+          </h1>
+          <div class="content">
+            <p>Assay metadata must be annotated in the file isa.assay.xlsx at the root of the assay's subdirectory.  This workbook must contain a single assay organized in one or many worksheets.
+A worksheet named “assay” must store the <a href="https://github.com/nfdi4plants/ARC-specfication/blob/main/ARC%20specification.md#assay-data-and-metadata" title="Study Assay">STUDY ASSAYS</a> section of the ISA model and is not required in the isa.investigation.xlsx. Additional worksheets must contain a table object organized on a per-row basis with the first row as column headers.
+Table objects must contain at least one source. Source sample relations must follow a unique path in a directed acyclic graph. Sources must be indicated by the column header Source Name, Samples accordingly by the header Sample Name.</p>
 
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
-          <h1 class="title is-lightblue">
-            First
-          </h1>
-          <div class="content">
-            <p>First</p>
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-yellow">
+                Assays
+              </h1>
+              <div class="content">
+                <p>Assays correspond to outcomes of experimental assays or analytical measurements and are treated as immutable data. Each assay is a collection of files stored in a single directory, including a mandatory metadata file in ISA-XLSX format.</p>
+<p>Assay data files, as well as protocols, must be placed in a subdirectory individually.</p>
+<p>We advise you to use SWATE for completing the study and assay metadata files, as it assists you in following the <a href="http://www.nfdi4plants.org/AnnotationPrinciples/" title="Annotation Principles">annotation principles</a> and comes along with a broad range of prepared templates.</p>
 
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/assays.svg"/>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container box has-bg-lightblue has-border-color-lightblue">
+      <div class="container box has-bg-white has-border-color-white">
         <div class="container">
-          <h1 class="title is-lightblue">
-            Second
-          </h1>
-          <div class="content">
-            <p>Second</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/Studies.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-olive">
+                Studies
+              </h1>
+              <div class="content">
+                <p>Studies are collections of material and resources used within the investigation.
+You need to place each study in a unique subdirectory. Material or experimental samples, as well as external data files, can be stored as virtual sample files (containing unique identifiers) in the resources directory. To describe the sample or material creation process, you can store protocols in the designated sub-folder.</p>
+<p>For each study, an isa.study.xlsx file following the ISA study model needs to be present to specify the characteristics of all material and resources, such as a certain strain. Resources might include external data (e.g., knowledge files or result files) that need to be included and cannot be referenced due to external limitations. Resources described in a study file can be the input for one or multiple assays.</p>
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-lightblue">
+                Workflows
+              </h1>
+              <div class="content">
+                <p>Workflows in ARCs represent processing steps used in computational analyses and other data transformations of assays to generate run results. Typical examples include data cleaning and preprocessing, computational analysis, or visualization.</p>
+<p>All files belonging to a specific workflow need to be stored in a single sub-directory.
+This also includes a mandatory per-workflow executable CWL description (v1.2 or higher), which can contain a tool or workflow description.</p>
+<p>We highly recommend to include a reproducible execution environment description in form of a Docker container description for tool descriptions.</p>
+
+              </div>
+            </div>
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/workflows.svg"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container box has-bg-white has-border-color-white">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-4by3">
+                <img src="../../images/Learn-more/ARC/runs.svg"/>
+              </figure>
+            </div>
+            <div class="column">
+              <h1 class="title is-grey">
+                Runs
+              </h1>
+              <div class="content">
+                <p>Runs in an ARC represent all artefacts that derive from computations on assay and external data. Plots, tables, or similar results, specific to certain run need to be saved in a subdirectory of the top-level runs directory.</p>
+<p>A run.cwl (v1.2 or higher) is mandatory for each of these subdirectories to cover workflow description and reproducibility. These files need to be executable without additional payload files or files outside the ARC.</p>
+<p>You can speficy input parameters for each run with a run.yml parameter file.</p>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </body>
-  <footer class="footer has-bg-darkblue-lighter-20">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              DataPLANT - Democratization of plant research made easy.
-            </h3>
-          </div>
-          <div class="block">
-            <p>
-              DataPLANT is part of 
-              <a href="https://www.nfdi.de/">
-                NFDI
-              </a>
-            </p>
-          </div>
-          <div class="block">
-            <p>
-              This website is developed and maintained by 
-              <a>
-                members of DataPLANT 
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Navigation
-            </h3>
-          </div>
-          <ul>
-            <div class="block">
-              <li>
-                <a href="/">
-                  Home
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  News
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  DataHub
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  Resources
-                </a>
-              </li>
-            </div>
-            <div class="block">
-              <li>
-                <a href="/">
-                  About
-                </a>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="column is-4 m-4">
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Social
-            </h3>
-          </div>
-          <div class="block">
-            <a href="https://twitter.com/nfdi4plants">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-twitter"></i>
-                </span>
-                <span>
-                  DataPLANT on Twitter
-                </span>
-              </span>
-            </a>
-          </div>
-          <div class="block">
-            <a href="https://github.com/nfdi4plants">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>
-                  DataPLANT open source projects on GitHub
-                </span>
-              </span>
-            </a>
-          </div>
-          <div class="block">
-            <h3 class="subtitle is-white">
-              Legal
-            </h3>
-          </div>
-          <div class="block">
-            <a href="">
-              Imprint
-            </a>
-          </div>
-          <div class="block">
-            <a href="">
-              Privacy
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <nfdi-footer></nfdi-footer>
 </html>
